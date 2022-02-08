@@ -20,8 +20,9 @@ export class AppComponent  {
     this.logger = new LoggerService();
   }
 
-  onInput(event: EventTarget) {
-    this.value = +(event as HTMLInputElement).value;
+  onInput() {
+    const inputElement = document.querySelector('input');
+    this.value = +inputElement.value;
     this.logger.log('Assigned new value');
   }
 
