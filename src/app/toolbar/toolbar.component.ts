@@ -10,6 +10,7 @@ export class ToolbarComponent implements OnChanges {
   toolbarService: ToolbarService;
   toolbar = [];
   currentPage = 'Home';
+  isClosedNav = false;
 
   constructor() { 
     this.toolbarService = new ToolbarService();
@@ -24,4 +25,7 @@ export class ToolbarComponent implements OnChanges {
     return this.toolbar[index].label === this.currentPage ? 'active' : '';
   }
 
+  onClick() {
+    this.isClosedNav = !this.isClosedNav;
+  }
 }
