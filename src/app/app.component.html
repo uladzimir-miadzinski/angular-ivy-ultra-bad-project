@@ -1,4 +1,12 @@
+<toolbar></toolbar>
+
 <hello name="{{ name }}"></hello>
 <p>
   Start editing to see some magic happen :)
 </p>
+<input type="number" (input)="onInput($event.target)">
+<p>
+  Square: {{ getSquare(value) }}
+</p>
+
+<app-database-calculations></app-database-calculations>

@@ -1,0 +1,1 @@
+export const database = [ 1, 2, 12, 15, 1024 ];
