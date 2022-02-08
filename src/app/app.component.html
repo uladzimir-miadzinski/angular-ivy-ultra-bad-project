@@ -1,11 +1,14 @@
 <toolbar></toolbar>
 
 <hello name="{{ name }}"></hello>
-<p>
+
+<p class="fs-3">
   Start editing to see some magic happen :)
 </p>
-<input type="number" (input)="onInput($event.target)">
-<p>
+
+<input class="form-control" type="number" (input)="onInput($event.target)">
+
+<p class="fs-3">
   Square: {{ getSquare(value) }}
 </p>
 

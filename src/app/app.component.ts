@@ -16,7 +16,7 @@ export class AppComponent  {
   logger: LoggerService;
 
   constructor(private upperCasePipe: UpperCasePipe) {
-    this.name = this.upperCasePipe.transform('Angular ' + VERSION.major);
+    this.name = this.upperCasePipe.transform('Project of your DREAM');
     this.logger = new LoggerService();
   }
 
