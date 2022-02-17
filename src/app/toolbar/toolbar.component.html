@@ -8,7 +8,7 @@
     </button>
     <div *ngIf="isClosedNav" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item" (click)="onNavItemClick(0)">
           <a 
             class="nav-link" 
             (click)="currentPage = toolbar[0].label" 
@@ -18,7 +18,7 @@
             {{ toolbar[0].label }}
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" (click)="onNavItemClick(1)">
           <a 
             class="nav-link" 
             (click)="currentPage = toolbar[1].label" 
@@ -28,7 +28,7 @@
             {{ toolbar[1].label }}
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" (click)="onNavItemClick(2)">
           <a 
             class="nav-link" 
             (click)="currentPage = toolbar[2].label" 

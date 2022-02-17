@@ -29,4 +29,8 @@ export class AppComponent  {
   getSquare(num: number): number {
     return num * num;
   }
+
+  onToolbarItemClick(index: number) {
+    console.log(index);
+  }
 }

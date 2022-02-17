@@ -1,4 +1,4 @@
-import { Component, OnChanges } from '@angular/core';
+import { Component, EventEmitter, OnChanges, Output } from '@angular/core';
 import { ToolbarService } from '../services/toolbar.service';
 
 @Component({
@@ -11,6 +11,8 @@ export class ToolbarComponent implements OnChanges {
   toolbar = [];
   currentPage = 'Home';
   isClosedNav = false;
+
+  @Output() click = new EventEmitter<number>();
 
   constructor() { 
     this.toolbarService = new ToolbarService();
@@ -27,5 +29,10 @@ export class ToolbarComponent implements OnChanges {
 
   onClick() {
     this.isClosedNav = !this.isClosedNav;
+  }
+
+  onNavItemClick(index: number) {
+    console.log('Nav Item Clicked', index);
+    this.click.emit(index);
   }
 }
