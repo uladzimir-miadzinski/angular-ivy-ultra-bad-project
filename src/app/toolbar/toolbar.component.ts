@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnChanges, Output } from '@angular/core';
+import { Component, EventEmitter, OnChanges, Input } from '@angular/core';
 import { ToolbarService } from '../services/toolbar.service';
 
 @Component({
@@ -12,7 +12,7 @@ export class ToolbarComponent implements OnChanges {
   currentPage = 'Home';
   isClosedNav = false;
 
-  @Output() click = new EventEmitter<number>();
+  @Input() click = new EventEmitter<number>();
 
   constructor() { 
     this.toolbarService = new ToolbarService();
