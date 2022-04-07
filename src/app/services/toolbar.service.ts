@@ -22,6 +22,14 @@ export class ToolbarService {
       {
         label: 'Features',
         link: '#'
+      },
+      {
+        label: 'Contacts',
+        link: '#'
+      },
+      {
+        label: 'Support',
+        link: '#'
       }
     ]
   }

@@ -1,15 +1,20 @@
 <toolbar (click)="onToolbarItemClick($event)"></toolbar>
 
-<hello name="{{ name }}"></hello>
+<main>
+  <hello name="{{ name }}"></hello>
 
-<p class="fs-3">
-  Start editing to see some magic happen :)
-</p>
+  <br>
 
-<input class="form-control" type="number" (input)="onInput()">
+  <div class="mb-3">
+    <label for="input" class="form-label">Start editing to see some magic happen :)</label>
+    <input id="input" class="form-control" type="number" (input)="onInput()">
+  </div>
 
-<p class="fs-3">
-  Square: {{ getSquare(value) }}
-</p>
+  <p>
+    Result of square: {{ getSquare(value) }}
+  </p>
 
-<app-database-calculations></app-database-calculations>
+  <br>
+
+  <app-database-calculations></app-database-calculations>
+</main>

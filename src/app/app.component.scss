@@ -4,6 +4,9 @@ p {
 
 :host {
   display: block;
+}
+
+:host main {
   margin-left: 1rem;
   margin-right: 1rem;
 }

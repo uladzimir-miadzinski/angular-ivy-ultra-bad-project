@@ -1,6 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
      (click)="onClick()"
     >
@@ -38,9 +37,28 @@
             {{ toolbar[2].label }}
           </a>
         </li>
+        <li class="nav-item" (click)="onNavItemClick(3)">
+          <a 
+            class="nav-link" 
+            (click)="currentPage = toolbar[3].label" 
+            [ngClass]="getClasses(3)" 
+            href="{{ toolbar[3].link }}"
+          >
+            {{ toolbar[3].label }}
+          </a>
+        </li>
+        <li class="nav-item" (click)="onNavItemClick(4)">
+          <a 
+            class="nav-link" 
+            (click)="currentPage = toolbar[4].label" 
+            [ngClass]="getClasses(4)" 
+            href="{{ toolbar[4].link }}"
+          >
+            {{ toolbar[4].label }}
+          </a>
+        </li>
       </ul>
     </div>
+    <button class="btn btn-primary" (click)="onExit()">Exit</button>
   </div>
 </nav>
-
-<button (click)="onExit()">Exit application</button>
