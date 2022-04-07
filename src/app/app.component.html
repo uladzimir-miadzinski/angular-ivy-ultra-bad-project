@@ -2,7 +2,7 @@
 
 <main>
   <br>
-  
+
   <hello name="{{ name }}"></hello>
 
   <br>
@@ -12,11 +12,13 @@
     <input id="input" class="form-control" type="number" (input)="onInput()">
   </div>
 
-  <p>
+  <span>
     Result of square: {{ getSquare(value) }}
-  </p>
+  </span>
 
   <br>
 
+  <br>
+  
   <app-database-calculations></app-database-calculations>
 </main>
