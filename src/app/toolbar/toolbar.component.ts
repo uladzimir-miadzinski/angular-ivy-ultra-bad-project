@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnChanges, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ToolbarService } from '../services/toolbar.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { ToolbarService } from '../services/toolbar.service';
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.scss']
 })
-export class ToolbarComponent implements OnChanges {
+export class ToolbarComponent {
   toolbarService: ToolbarService;
   toolbar = [];
   currentPage = 'Home';
