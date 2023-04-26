@@ -1,4 +1,4 @@
-import { LoggerService } from "./logger.service"
+import { LoggerService } from "../logger.service"
 
 export class ToolbarService {
   logger: LoggerService;
