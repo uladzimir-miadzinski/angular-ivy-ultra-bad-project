@@ -1,7 +1,7 @@
 import { UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
-import { LoggerService } from './logger.service' 
+import { LoggerService } from './logger.service';
 
 @Component({
   selector: 'app',
