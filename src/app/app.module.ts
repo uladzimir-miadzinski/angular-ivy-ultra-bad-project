@@ -9,10 +9,11 @@ import { DatabaseCalculationsComponent } from './database-calculations/database-
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { DatabaseCalculationsModule } from './database-calculations/database-calculations.module';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, ReactiveFormsModule, CommonModule, RouterModule, HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, ToolbarComponent, DatabaseCalculationsComponent ],
+  imports:      [ BrowserModule, FormsModule, ReactiveFormsModule, CommonModule, RouterModule, HttpClientModule, DatabaseCalculationsModule ],
+  declarations: [ AppComponent, HelloComponent, ToolbarComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
