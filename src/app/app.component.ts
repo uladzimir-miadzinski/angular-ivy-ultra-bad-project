@@ -34,4 +34,8 @@ export class AppComponent  {
   onToolbarItemClick(index: number) {
     console.log(index);
   }
+
+  onToolbarExit() {
+    console.log('exit app');
+  }
 }
